@@ -4,38 +4,28 @@ html, body{
 html{
  height: 100%;
 }
-
+* {
+	box-sizing: border-box;
+}
 body{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	margin: 0;
 	border: 15px solid #2B81AC;
 	background-color: #3399CC;
 }
+.weather-forecast{
+	max-width: 800px;
+	margin: 0 auto;
+}
 header{
 	margin: 0 auto;
-	width: 800px;
 	color: #FFFFFF;
 }
-.weather-list {
-	max-width: 800px;
-	height: 500px;
-	margin: 0 auto;
-	background-color: #FFFFFF;
-	color: #FFFFFF;
-	padding: 0;
-	text-align: center;
-	border: 2px solid #FFFFFF;
-}
-ul {
-	font-size: 0px;
-}
-h4{
-	display: block;
+h4 {
 	font-size: 24px;
 	margin: 0;
-	padding-top: 20px;
 }
-span{
+.weather-list span{
 	font-size: 16px;
 	opacity: 0.8;
 }
@@ -43,141 +33,68 @@ li i{
 	font-size: 26px;
 	opacity: 0.8;
 }
-.lisbon {
-	background-color: #3399CC;
-	font-size: 14px;
-	width: 50%;
-	height: 25%;
-	margin: 0;
-	border: 2px;
-	display: inline-block;
+.weather-list{
+	background-color: #FFF;
+	list-style:none;
+	padding-left: 0;
+	font-size: 0;
+}
+.weather-list > li {
+	color: #FFFFFF;
+	padding: 15px;
+	text-align: center;
 	border: 2px solid #FFFFFF;
-	box-sizing: border-box;
+	display: inline-block;
+	width: 25%;
+}
+
+.weather-list .lisbon {
+	background-color: #3399CC;
+	width: 50%;
 }
 .paris {
 	background-color: #33CCCC;
-	font-size: 14px;
-	width: 25%;
-	height: 25%;
-	border: 2px;
-	margin: 0;
-	display: inline-block;
-	border: 2px solid #FFFFFF;
-	box-sizing: border-box;
 
 }
 .belgrade {
 	background-color: #996699;
-	font-size: 14px;
-	width: 25%;
-	height: 25%;
-	border: 2px;
-	margin: 0;
-	display: inline-block;
-	border: 2px solid #FFFFFF;
-	box-sizing: border-box;
-
  }
  .moscow{
  	background-color: #C24747;
- 	font-size: 14px;
- 	width: 25%;
- 	height: 25%;
- 	border: 2px;
- 	margin: 0;
- 	display: inline-block;
- 	border: 2px solid #FFFFFF;
- 	box-sizing: border-box;
-
  }
  .telaviv {
  	background-color: #E2674A;
- 	font-size: 14px;
- 	width: 25%;
- 	height: 25%;
- 	border: 2px;
- 	margin:0;
- 	display: inline-block;
- 	border: 2px solid #FFFFFF;
- 	box-sizing: border-box;
  }
 .cair {
 	background-color: #FFCC66;
- 	font-size: 14px;
- 	width: 25%;
- 	height: 25%;
- 	border: 2px;
- 	margin:0;
- 	display: inline-block;
- 	border: 2px solid #FFFFFF;
- 	box-sizing: border-box;
 }
 .newyork {
 	background-color: #99CC99;
- 	font-size: 14px;
- 	width: 25%;
- 	height: 25%;
- 	border: 2px;
- 	margin:0;
- 	display: inline-block;
- 	border: 2px solid #FFFFFF;
- 	box-sizing: border-box;
 }
 .newdehli{
 	background-color: #669999;
- 	font-size: 14px;
- 	width: 25%;
- 	height: 25%;
- 	border: 2px;
- 	margin:0;
- 	display: inline-block;
- 	border: 2px solid #FFFFFF;
- 	box-sizing: border-box;
 }
-.sanfrancisco{
+.weather-list .sanfrancisco {
 	background-color: #CC6699;
- 	font-size: 14px;
- 	width: 50%;
- 	height: 25%;
- 	border: 2px;
- 	margin:0;
- 	display: inline-block;
- 	border: 2px solid #FFFFFF;
- 	box-sizing: border-box;
+	width: 50%;
 }
 .tokyo{
 	background-color: #339966;
- 	font-size: 14px;
- 	width: 25%;
- 	height: 25%;
- 	border: 2px;
- 	margin:0;
- 	display: inline-block;
- 	border: 2px solid #FFFFFF;
- 	box-sizing: border-box;
 }
-.sydney{
+.weather-list .sydney{
 	background-color: #666699;
- 	font-size: 14px;
- 	width: 100%;
- 	height: 25%;
- 	border: 2px;
- 	margin:0;
- 	display: inline-block;
- 	border: 2px solid #FFFFFF;
- 	box-sizing: border-box;
+	width: 100%;
 }
-span:after{
+.weather-list span:after{
 	content: "°C";
 }
 .footer{
 	margin: 0 auto;
-	max-width: 800px;
 	padding: 20px auto;
 	color: #FFFFFF;
 	font-size: 18px;
 }
 .weather-list:hover  li:not(:hover) {
- opacity: 0.7;
- transition: all .1s ease-in;
+ 	opacity: 0.7;
+ 	transition: all .1s ease-in;
 }
